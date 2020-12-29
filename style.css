@@ -1,0 +1,74 @@
+body {
+    padding: 0px;
+    background-color: FFFFFF;
+    margin: 0;
+    
+
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-bottom: 200px;
+    padding: 200px;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(600% 0%, 0% 90% , 0% -500% );
+}   
+
+
+
+
+
+
+
+#videoBG {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    min-width:100%;
+
+      
+  }
+
+.container-avatar {
+    
+
+}
+
+.respect-overflow{
+    
+}
+
+.overflow {
+  
+    
+ }
+
+.avatar {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    z-index: -0;
+    transform: translate(-50%, 0%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid white;
+    margin-top: 100px;
+
+  }
+
+.name {
+    margin-top: 200px;
+    /* margin-bottom: -110px; */
+}
+
+
+
+
