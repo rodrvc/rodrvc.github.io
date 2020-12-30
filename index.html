@@ -16,55 +16,177 @@
 </head>
 
 <body>
-    <div>
-        <div class="hero">
-            <div class=" respect-overflow">
-                <video id="videoBG" poster="assets/bgvideo.png" autoplay muted loop>
-                    <source src="/assets/4k background footage (ideal for Blockchain Website).mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="container-avatar text-center">
-                <img class="avatar" src="./assets/cuadrado.jpg" alt="rodrigo-valladares"> 
-            </div>
-            <div class="name">
+    <div class="hero">
+        <div class=" respect-overflow">
+            <video id="videoBG" poster="assets/bgvideo.png" autoplay muted loop>
+                <source src="/assets/4k background footage (ideal for Blockchain Website).mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="container-avatar text-center">
+            <img class="avatar" src="./assets/cuadrado.jpg" alt="rodrigo-valladares">
+        </div>
+        <div class="name">
             <h1 class="display-4 text-center fw-bold ">Rodrigo Valladares</h1>
             <h2 class="text-center">Junior Developer</h2>
-            </div>
-            <div class="no-overflow">
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h1 class="text-center">Projects</h1>
+        <p class="lead text-center">You can see some of my projects!</p>
+
+
+        <!-- Section Cards -->
+        <!-- Task Requester -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="/assets/projects/task-image-large.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Task Requester</h5>
+                  <p class="card-text">
+                    This application is in progress. With it you can find people who can do housework for you</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modaltask">
+                        More details
+                    </button>
+                </div>
                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="/assets/projects/banqueteria.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Banquet Admin</h5>
+                  <p class="card-text">
+                    Macro for banquet management. Both menus and financial elements can be managed</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalbanquetadmin">
+                        More details
+                    </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="/assets/projects/workorder.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Work Order</h5>
+                  <p class="card-text">
+                    A simple application for managing tasks and their status. </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalworkorder">
+                        More details
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+
+        <hr class="my-4">
+        <p class="text-center">
+            I have much more to contribute so stay tuned</p>
+        <div class="footer">
+
+           
+        </div>
+    </div>   
+    <!-- VIDEOS MODAL -->
+
+
+    <!-- task -->
+
+    <div class="modal  fade" id="modaltask" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Task Requester</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <video width="720" height="480" controls>
+                        <source src="/assets/projects/video/video-proyectotask.mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+                <div class="modal-footer">
+    
+    
+                </div>
             </div>
         </div>
+    </div>
+
+
     
-
+    <!-- BANQUET ADMIN -->
+    <div class="modal  fade" id="modalbanquetadmin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Banquet Admin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <video width="720" height="480" controls>
+                        <source src="/assets/projects/video/respaldoPlanillacc.xlsm - Excel 2020-12-30 04-19-15.mp4"
+                            type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="modal-footer">
+    
+    
+                </div>
+            </div>
+        </div>
     </div>
 
 
-
-    <div class=" bg-light lang"></div>
-
-
-    <p class="lead text-center">Developer Junior, You can see my skills </p>
-    <hr class="my-4">
-    <p class="text-center">It uses utility classes for typography and spacing to space content out within the larger
-        container.</p>
-    <div class="text-center">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="modal  fade" id="modalworkorder" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Work Order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <video width="720" height="480" controls>
+                        <source src="/assets/projects/video/WorkOrder.mp4"
+                            type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="modal-footer">
+    
+    
+                </div>
+            </div>
+        </div>
     </div>
 
 
+        <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
+
+
 </body>
 
 </html>
