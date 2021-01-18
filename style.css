@@ -1,9 +1,11 @@
+.primary-color {
+    background-color: maroon;
+}
+
 body {
     padding: 0px;
     background-color: FFFFFF;
     margin: 0;
-    
-
 }
 
 .hero {
@@ -12,21 +14,77 @@ body {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     padding: 150px 150px 200px 150px;
     position: relative;
     overflow: hidden;
     clip-path: polygon(600% 0%, 0% 90% , 0% -500% );
-}   
+    height: 800px;
+} 
+
+
+
+.name { 
+    animation: yourAnimation 3s  0s linear;
+    color: ivory;
+}
+
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(xx) translateY(500px);
+        opacity: 0;
+        }
+    97%{
+        transform: rotate(xx) translateY(10px);
+        opacity: 1;
+        }
+}
+
+.elementToAnimate{
+    
+}
+
+
+
+.hero {
+
+}
+
+.title {
+    padding-bottom: 150px;
+    animation: my-avatar 2s ease-out forwards;
+    animation-iteration-count: initial;
+}
+
+.my-container {
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px , .3fr));
+    grid-template-rows: 1 / 1;
+    margin: auto;
+
+}
+
+.card {
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.1);
+}
+.card:hover{
+    
+}
 
 .card-img-top {
   width: 100%;
   height: 200px;
   object-fit: cover;
+ 
 }
 
 .footer {
   height: 300px;
+  background-color: black;
+  margin: 0;
 }
 
 
@@ -61,7 +119,7 @@ body {
     
  }
 
-.avatar {
+/* .avatar {
     position: absolute;
     top: 0%;
     left: 50%;
@@ -71,15 +129,63 @@ body {
     height: 200px;
     border-radius: 50%;
     border: 5px solid white;
-    margin-top: 100px;
+    margin-top: 210px;
+    animation: my-avatar 2s ease-out forwards;
+    animation-iteration-count: initial; */
 
-  }
+  /* } */
 
-.name {
-    margin-top: 200px;
-    /* margin-bottom: -110px; */
+  @keyframes my-avatar
+{ 
+  from { top: +200px;
+            opacity: 0;}
+  to { opacity: 1;
+      top: -0%;}
 }
 
 
+.name {
+    margin-top: 0px;
+    /* margin-bottom: -110px; */
+}
+
+.title-project {
+    margin: 50px;
+}
+
+.ul {
+    
+    list-style: none;
+}
 
 
+/* .hero {
+    display: grid;
+    background-color: #0a3655;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%230a3655' cx='50' cy='0' r='50'/%3E%3Cg fill='%230c3c5d' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%230e4265' cx='50' cy='100' r='50'/%3E%3Cg fill='%2310486d' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23114e75' cx='50' cy='200' r='50'/%3E%3Cg fill='%2313547d' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23145a85' cx='50' cy='300' r='50'/%3E%3Cg fill='%2316608d' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23176796' cx='50' cy='400' r='50'/%3E%3Cg fill='%23176d9e' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%231874a7' cx='50' cy='500' r='50'/%3E%3Cg fill='%23187baf' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%231881b8' cx='50' cy='600' r='50'/%3E%3Cg fill='%231888c1' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23188fca' cx='50' cy='700' r='50'/%3E%3Cg fill='%231796d2' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23159ddb' cx='50' cy='800' r='50'/%3E%3Cg fill='%2313a4e4' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%230fabed' cx='50' cy='900' r='50'/%3E%3Cg fill='%230ab3f6' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%2303baff' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(600% 0%, 0% 90% , 0% -500% );
+} */
+
+
+
+
+/* 
+TODO ADD MORE PROJECTS */
+
+/* ADD SOCIAL PROFILES TREEHOUSE AND LINKEDIN */
+
+@media (min-width: 600px) {
+    .hero{
+      
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+        text-transform: uppercase;
+        
+    }
+}

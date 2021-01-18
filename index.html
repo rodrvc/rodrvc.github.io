@@ -9,38 +9,39 @@
 
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="./style.css" rel="stylesheet">
-    <title>Hello, world!</title>
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <title>Rodrigo Valladares Portafolio</title>
 </head>
 
 <body>
     <div class="hero">
         <div class=" respect-overflow">
             <video id="videoBG" poster="assets/bgvideo.png" autoplay muted loop>
-                <source src="/assets/4k background footage (ideal for Blockchain Website).mp4" type="video/mp4">
+                <source src="/assets/Black - 13495.mp4" type="video/mp4">
             </video>
         </div>
-        <div class="container-avatar text-center">
+        <!-- <div class="container-avatar text-center">
             <img class="avatar" src="./assets/cuadrado.jpg" alt="rodrigo-valladares">
-        </div>
+        </div> -->
         <div class="name">
-            <h1 class="display-4 text-center fw-bold ">Rodrigo Valladares</h1>
-            <h2 class="text-center">Junior Developer</h2>
+            <h1 class=" text-center fw-bold text-white">Rodrigo Valladares</h1>
+            <h2 class="text-center text-white">Junior Developer</h2>
         </div>
     </div>
 
 
 
-    <div class="container">
-        <h1 class="text-center">Projects</h1>
-        <p class="lead text-center">You can see some of my projects!</p>
 
+    <div class="container-sm">
+        <div class="title">
+        <h1 class="text-center  ">Projects</h1>
+        <p class="lead text-center">You can see some of my projects!</p>
+        </div>
 
         <!-- Section Cards -->
         <!-- Task Requester -->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="my-container ">
             <div class="col">
               <div class="card">
                 <img src="/assets/projects/task-image-large.png" class="card-img-top" alt="...">
@@ -81,6 +82,49 @@
                 </div>
               </div>
             </div>
+
+
+
+            <div class="col">
+                <div class="card">
+                  <img src="/assets/projects/angular-portafolio.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Task Requester</h5>
+                    <p class="card-text">
+                      This application is in progress. With it you can find people who can do housework for you</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-simple-angular-app">
+                          More details
+                      </button>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="/assets/projects/banqueteria.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Banquet Admin</h5>
+                    <p class="card-text">
+                      Macro for banquet management. Both menus and financial elements can be managed</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalbanquetadmin">
+                          More details
+                      </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="/assets/projects/workorder.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Work Order</h5>
+                    <p class="card-text">
+                      A simple application for managing tasks and their status. </p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalworkorder">
+                          More details
+                      </button>
+                  </div>
+                </div>
+              </div>
           </div>
         
 
@@ -88,11 +132,14 @@
         <hr class="my-4">
         <p class="text-center">
             I have much more to contribute so stay tuned</p>
-        <div class="footer">
+
+    </div>   
+
+
+    <div class="footer">
 
            
-        </div>
-    </div>   
+    </div>
     <!-- VIDEOS MODAL -->
 
 
@@ -111,6 +158,18 @@
                         <source src="/assets/projects/video/video-proyectotask.mp4"
                             type="video/mp4">
                     </video>
+                    <div>
+                        <h2 class="title-project">Task Resquer</h2>
+                        <p>Is my project title [ in construccion]  </p>
+                        <p>the goal of this project is to find people who want to do housework for you </p>
+                        <p><strong>Technologies</strong></p>
+                        <ul class="ul">
+                            <li>React.js</li>
+                            <li>Ant Design</li>
+                            <li>MongoDb</li>
+                            <li>Express.js</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="modal-footer">
     
@@ -147,6 +206,7 @@
         </div>
     </div>
 
+    <!-- MODAL WORKORDER ANDROID AND FIREBASE -->
 
     <div class="modal  fade" id="modalworkorder" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -167,6 +227,26 @@
                 <div class="modal-footer">
     
     
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODEL FOR SIMPLE ANGULAR APP -->
+
+    <div class="modal  fade" id="modal-simple-angular-app" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Work Order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img class="img-fluid" src="/assets/projects/angular-portafolio.png" alt="">
+                </div>
+                <div class="modal-footer">
                 </div>
             </div>
         </div>
