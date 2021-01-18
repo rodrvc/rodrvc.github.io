@@ -14,7 +14,7 @@ body {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 100px;
     padding: 150px 150px 200px 150px;
     position: relative;
     overflow: hidden;
@@ -26,6 +26,7 @@ body {
 
 .name { 
     animation: yourAnimation 3s  0s linear;
+    
     color: ivory;
 }
 
@@ -50,11 +51,17 @@ body {
 
 }
 
+.about {
+    margin-bottom: 200px;
+}
+
 .title {
-    padding-bottom: 150px;
+    padding-bottom: 30px;
     animation: my-avatar 2s ease-out forwards;
     animation-iteration-count: initial;
 }
+
+
 
 .my-container {
     height: auto;
@@ -64,6 +71,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px , .3fr));
     grid-template-rows: 1 / 1;
     margin: auto;
+    margin-bottom: 200px;
 
 }
 
@@ -80,13 +88,25 @@ body {
   object-fit: cover;
  
 }
+p {
+    margin: 10px
 
+
+}
 .footer {
-  height: 300px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1000px;
+  height: 200px;
   background-color: black;
   margin: 0;
 }
 
+.icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60px;
+}
 
 /* ///MODALSTYLES// */
 
