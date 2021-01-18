@@ -88,6 +88,17 @@ body {
 }
 
 
+/* ///MODALSTYLES// */
+
+.explain{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-self: start;
+}
+
+
 
 
 
